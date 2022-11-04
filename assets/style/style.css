@@ -64,6 +64,12 @@ a:link {
     height: 80vh;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
 .button-container {
     margin-top: 30px;
     display: flex;
