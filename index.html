@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Contador em HTML | JS | CSS</title>
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/popup.css">
 </head>
 
 <body>
-    <h1>Contador</h1>
-    <div class="main-container">
-        <input id = "input" type="text" value="0">
-        <div class="buttons-container">
-            <button id = "buttonMenor"> < </button>
-            <button id = "resetar"> Resetar </button>
-            <button id = "buttonMaior"> > </button>
+    <nav class="nav-container">
+        <div class="nav-left nav-a">
+            <a>Contador</a>
         </div>
-        
+        <div class="nav-right nav-a">
+            <a href="https://github.com/devSantos16">Meu Github</a>
+        </div>
+    </nav>
+    <div class="popup">
+        <span class="popup-elemento" id="popup">O valor não pode ser negativo !</span>
     </div>
+    <div class="main-container">
+        <div class="main">
+            <!-- Aviso caso for negativo -->
+            <input id="input" disabled type="text" value="0">
+            <div class="button-container">
+                <button id="buttonMenor">
+                    < </button>
+                        <button id="resetar"> Resetar </button>
+                        <button id="buttonMaior"> > </button>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <p>Todos direitos reservados a Emanuel dos Santos Paz</p>
+    </footer>
 </body>
 <script src="assets/scripts.js"></script>
+
 </html>

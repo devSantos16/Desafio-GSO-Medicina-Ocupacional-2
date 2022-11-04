@@ -1,0 +1,52 @@
+ /* Popup container */
+ .popup {
+     position: fixed;
+     cursor: pointer;
+     margin-top: 20px;
+     width: 100%;
+ }
+
+/* Elemento do popup  */
+ .popup .popup-elemento {
+     font-size: 15px;
+     width: 100px;
+     border-radius: 5px;
+     background-color: #202024;
+     padding: 10px;
+     visibility: hidden;
+ }
+
+ /* Visibilidade do Popup */
+ .popup .show {
+     visibility: visible;
+     -webkit-animation: fadeIn 1s;
+     animation: fadeIn 1s
+ }
+
+ /* Invisibilidade do Popup */
+ .popup .hidden {
+     visibility: hidden;
+     opacity: 0;
+     transition: visibility 0s 1s, opacity 1s linear;
+ }
+
+ /* Animações de transição */
+ @-webkit-keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
